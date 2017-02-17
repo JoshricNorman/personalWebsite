@@ -1,0 +1,374 @@
+@charset "utf-8";
+/* CSS Document for the styling of index.html */
+
+@import url("fonts.css");
+
+html {
+    height: 100%;
+    overflow-y: scroll;
+}
+    body {
+      height:100%;
+      margin: 0px auto;
+    }
+
+        h1 {
+            font-family: 'kenyanCoffee';
+            font-size: 36px;
+            letter-spacing: 3px;
+            color: #FF5000;
+            margin-bottom: 10px;
+            font-weight: normal;
+        }
+
+        h2 {
+            font-family: 'kenyanCoffee';
+            font-size: 24px;
+            letter-spacing: 2px;
+            color: #FF5000;
+            font-weight: 500;
+        }
+
+        h3 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 24px;
+            margin-top: 10px;
+            color: #200535;
+        }
+
+        h4 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            margin-top: 10px;
+            color: #200535;
+        }
+
+        h5 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 10px;
+            display: inline;
+            color: #200535;
+        }
+
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            color: #200535;
+            text-align: left;
+            line-height: 150%;
+
+            padding-top: none;
+            /*z-index: 10;*/
+        }
+            p a {
+                color: #FF5000;
+                text-decoration: none;
+            }
+
+            p a:hover {
+                color: #FF5000;
+                text-decoration: underline;
+            }
+
+        b {
+            font-weight: 900;
+        }
+
+        .link-button {
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            color: #200535;
+
+            padding: 12.5px 15px;
+
+            border: 5px solid #200535;
+            border-radius: 3000px;
+            text-decoration: none;
+        }
+
+        .link-button:hover {
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            font-weight: 900;
+            color: #FF5000;
+
+            padding: 12.5px 15px;
+
+            border: 5px solid #FF5000;
+            border-radius: 3000px;
+            text-decoration: none;
+        }
+
+
+            header{
+                height: 60px;
+                /*height: 10%;
+                min-height: 60px;
+                max-height: 80px;*/
+                width: 100%;
+                margin: auto;
+                background-color: #F9E0A4;
+                /*background: rgba(255, 255, 255, 0.85);*/
+                position: fixed;
+                z-index: 10;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+                display: flex;
+                justify-content: space-between;
+
+            }
+
+                #headerLogoContainer {
+                    height: 100%;
+                    width: auto;
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 0px;
+
+                    /*background-color: #200535;*/
+                    background-color: white;
+                }
+
+                #headerLogoContainer:hover {
+                    background-color: #FF5000;
+                }
+
+                    #headerLogo {
+                        height: 90%;
+                        padding-left: 10px;
+                        object-fit: contain;
+                        align-self: center;
+                    }
+
+                    #speechTriangle {
+                        width: 0;
+                        height: 0;
+                        border-top: 15px solid transparent;
+                        border-bottom: 15px solid transparent;
+                        border-right: 25px solid #F9E0A4;
+                        display: inline-block;
+                        align-self: center;
+                        /*flex-grow: 2;*/
+                    }
+
+                #mainNav {
+                    /*float: right;*/
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    margin-right: 25%;
+                }
+
+                #mainNav .navButtContainer {
+                    display: flex;
+                    align-items: center;
+                    height: 95%;
+                }
+
+                    #mainNav a {
+                        font-family: 'Roboto', sans-serif;
+                        text-decoration: none;
+                        color: #200535;
+                        font-size: 16px;
+                        font-weight: 500;
+                        list-style: none;
+                        text-align: center;
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        display: block;
+                    }
+
+                    #mainNav a:hover {
+                        color: #FF5000;
+                    }
+
+                    #navButtContainerActive {
+                        /*background-color: #FF5000;*/
+                        /*font-weight: 900;*/
+                        border-bottom: 5px solid #FF5000;
+                    }
+                    /*#navButtContainerActive a:hover {
+                        color:  #F9E0A4;
+                    }*/
+
+                #hamburgerButton {
+                    width: 3%;
+                    max-width: 30px;
+                    min-width: 20px;
+                    /*z-index: 11;*/
+                    position: relative;
+                    top: 50%;
+                    -webkit-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                    margin-right: 2%;
+                    float: right;
+
+                    /*set to block on mobile*/
+                    display: none;
+                }
+
+                    .hamburgerThird {
+                        background-color: #200535;
+                        height: 5px;
+                        width: 100%;
+                        margin-bottom: 5px;
+                    }
+
+                    .hamburgerThirdActive {
+                        background-color: #FF5000;
+                    }
+
+                #nameTitle{
+                    margin: 0px;
+                    float: left;
+                    padding-left: 35px;
+                    position: relative;
+                    top: 50%;
+                    -webkit-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                }
+
+
+            #contentWrapper {
+                height: 90%;
+                width: 100%;
+                position: absolute;
+                top: 60px;
+            }
+
+                #sideBar{
+                    position: fixed;
+                    right: -175px;
+                    /*left: -175px;*/
+                    width: 150px;
+                    height: 100%;
+                    /*background-color: #F9E0A4;*/
+                    background-color: white;
+                    /*border-left: 2px solid #FF5000;*/
+                    z-index: 15;
+
+                    text-align: center;
+                }
+
+                    #hamburgerNav {
+                        height: auto;
+                    }
+
+                    #hamburgerNav ul {
+                        list-style: none;
+                        width: 100%;
+                        height: auto;
+                        padding: 0px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                    }
+
+                        #hamburgerNav ul li {
+                            width: 100%;
+                            padding: 10px 0px 10px 0px;
+                            /*border-bottom: 2px solid #FF5000;*/
+                        }
+
+                            #hamburgerNav  ul li a{
+                                font-family: 'Roboto', sans-serif;
+                                text-decoration: none;
+                                color: #200535;
+                                font-size: 16px;
+                                font-weight: 500;
+                                list-style: none;
+                                text-align: center;
+                            }
+
+                            #hamburgerNav ul li a:hover{
+                                color: #FF5000;
+                            }
+
+                        #hamburgerNav ul ##hamburgerNavButtActive {
+                            background-color: #FF5000;
+                        }
+
+                            #hamburgerNav ul ##hamburgerNavButtActive a:hover{
+                                color: #F9E0A4;
+                            }
+
+                    #backHomeButt {
+                        position: absolute;
+                        bottom: 15%;
+                        right: 27%;
+                        font-size: 75px;
+                        font-weight: 700;
+                        border-style: none;
+                        width: 40px;
+                    }
+
+                    #backHomeText {
+                        position: absolute;
+                        bottom: 10%;
+                        text-align: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 100%;
+                        opacity: 0;
+                    }
+
+                /*AJAX content styling*/
+                #mainContent{
+                    /*padding: 15px 15px 0px 15px;*/
+                    /*border-right: medium solid #FF5000;*/
+                    margin: auto;
+                    left: 0;
+                    right: 0;
+                    position: absolute;
+                    padding: 10px 0 100px 0;
+                    width: 85%;
+                    height: auto;
+                }
+
+                .contactMePromptA {
+                    margin: 15px;
+                    position: relative;
+                    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+                    text-decoration: none;
+                    max-width: 500px;
+                }
+
+                .contactMePromptA:hover {
+                    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4);
+                }
+
+                    .contactMePrompt {
+                        display: inline-block;
+                        min-height: 200px;
+                        padding: 15px;
+
+                        display: flex;
+                        align-content: center;
+                        align-items: center;
+                        justify-content: center;
+                        flex-wrap: wrap;
+
+                    }
+
+                        .contactMePrompt  img {
+                            display: block;
+                            margin: auto;
+                            padding: 15px;
+                        }
+
+                        .contactMePrompt  h2 {
+                            /*margin: auto;*/
+                            padding: 6% 3% 3% 3%;
+                            text-align: center;
+                            color: #200535;
+                            line-height: 45px;
+                            width: 200px;
+                            margin: auto;
+                        }

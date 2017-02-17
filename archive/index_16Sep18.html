@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html>
+
+	<!-- BEGIN HEAD -->
+    <head>
+    	<meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   		<title>Joshric Aurea</title>
+
+        <!-- STYLE SHEETS-->
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+        <!-- SCRIPTS-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $(".navButtInactive").mouseenter(function(){
+                    $(this).find("img").animate({
+                        bottom: '15px' });
+                    $(this).find("figcaption").fadeTo( "slow", 1);
+                });
+
+                $(".navButtInactive").mouseleave(function(){
+                    $(this).find("img").animate({
+                        bottom: '0px'
+                    });
+                    $(this).find("figcaption").fadeTo( "slow", 0);
+                });
+
+                $(".navButtInactive").click(function(){
+                    $(this).parents("#navImages").find("navButtActive").attr("class", "navButtInactive");
+                    $(this).attr("class", "navButtActive");
+                });
+
+                $(".navButtActive").click(function(){
+                    $(this).attr("class", "navButtInactive");
+                });
+            });
+        </script>
+    </head>
+
+
+    <!-- BEGIN BODY -->
+    <body>
+        <div id="topBar"> </div>
+
+        <!-- Header -->
+    	<header>
+
+          <h1>JOSHRIC AUREA</h1>
+
+          <h4>Graphic Design & Illustration </h4>
+
+          <nav id="homeNav" >
+              <ul id="navImages">
+                  <li>
+                      <a href="#test" target="_self" id="aboutHome" class="navButtInactive">
+                          <figure>
+                              <img src="img/homeNav_Logo_16Sep18.png">
+                              <figcaption>About</figcaption>
+                          </figure>
+                      </a>
+                  </li>
+
+                  <li>
+                      <a href="#homeNav" target="_self" id="resumeHome" class="navButtInactive">
+                          <figure>
+                              <img src="img/homeNav_Resume_16Sep18.png">
+                              <figcaption>Resume</figcaption>
+                          </figure>
+                      </a>
+                  </li>
+
+                  <li>
+                      <a href="#homeNav" target="_self" id="portfolioHome" class="navButtInactive">
+                          <figure>
+                              <img src="img/homeNav_Portfolio_16Sep18.png">
+                              <figcaption>Portfolio</figcaption>
+                          </figure>
+                      </a>
+                  </li>
+
+                  <li>
+                      <a href="#homeNav" target="_self" id="findMeHome" class="navButtInactive">
+                          <figure>
+                              <img src="img/homeNav_Find_16Sep18.png">
+                              <figcaption>Find Me</figcaption>
+                          </figure>
+                      </a>
+                  </li>
+
+                  <li>
+                      <a href="#homeNav" target="_self" id="contactMeHome" class="navButtInactive">
+                          <figure>
+                              <img src="img/homeNav_Contact_16Sep18.png">
+                              <figcaption>Contact Me</figcaption>
+                          </figure>
+                      </a>
+                  </li>
+              </ul>
+          </nav>
+      </header>
+
+      <div id="speechTriangle">
+      </div>
+
+      <div id="content">
+          <div id="aboutPreview" class="contentPreview">
+
+          </div>
+
+          <div id="resumePreview" class="contentPreview">
+          </div>
+
+          <div id="portfolioPreview" class="contentPreview">
+          </div>
+
+          <div id="findMePreview" class="contentPreview">
+          </div>
+      </div> <!--End Content -->
+    </body>
+</html>

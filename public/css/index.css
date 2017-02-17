@@ -1,0 +1,244 @@
+@charset "utf-8";
+/* CSS Document for the styling of index.html */
+
+@import url("fonts.css");
+
+html {
+    height: 100%;
+    overflow-y: scroll;
+
+}
+    body {
+      height:100%;
+      margin: 0px auto;
+      text-align:center;
+      background-color: #F9E0A4;
+    }
+
+        #topBar {
+          height: 15px;
+          width: 100%;
+          margin: auto;
+          background-color: #200535;
+          position: fixed;
+          z-index: 100;
+        }
+
+        h1 {
+            font-family: 'kenyanCoffee';
+            font-size: 64px;
+            letter-spacing: 10px;
+            color: #FF5000;
+            margin-bottom: 10px;
+            font-weight: normal;
+        }
+
+        h2 {
+
+        }
+
+        h3 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 24px;
+            margin-top: 10px;
+            color: #200535;
+        }
+
+        h4 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            margin-top: 10px;
+            color: #200535;
+        }
+
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            color: #200535;
+            text-align: left;
+            line-height: 150%;
+
+            padding-top: none;
+            z-index: 10;
+        }
+        b {
+            font-weight: 900;
+        }
+
+        .link-button {
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            color: #200535;
+
+            padding: 12.5px 15px;
+
+            border: 5px solid #200535;
+            border-radius: 3000px;
+            text-decoration: none;
+        }
+
+        .link-button:hover {
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            font-weight: 900;
+            color: #FF5000;
+
+            padding: 12.5px 15px;
+
+            border: 5px solid #FF5000;
+            border-radius: 3000px;
+            text-decoration: none;
+        }
+
+        header {
+            padding-top: 200px;
+            padding-bottom: 0px;
+            background-color: #F9E0A4;
+        }
+            nav {
+                margin-top: 50px;
+                width: 100%;
+                height: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            nav #navImages {
+                margin-bottom: 0;
+            }
+            nav  #navImages .navButt {
+                display: inline;
+                margin-left: 3%;
+                margin-right: 3%;
+                text-align: center;
+                font-family: 'Roboto', sans-serif;
+                font-size: 20px;
+                font-weight: 900;
+                text-decoration: none;
+                /*background-color: orange;*/
+            }
+
+            nav  #navImages .navButt a{
+                text-decoration: none;
+                color: #200535;
+                text-align: center;
+            }
+
+            figure {
+                min-width: 100px;
+                width: 15%;
+                height: auto;
+                display:inline-block;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+
+            figure img {
+                width: 100%;
+                max-width: 127px;
+                min-width: 110px;
+                position: relative;
+                /*background-color: pink;*/
+                border-radius: 50%;
+                background-color: white;
+            }
+
+            figcaption {
+                top: 5px;
+                opacity: 0;
+                text-align: center;
+                width: 127px;
+                /*background-color: teal;*/
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            figure .anchor {
+                width: 0px;
+                height: 0px;
+                margin: 0 auto;
+                display: inline-block;
+            }
+
+        #speechTriangle {
+            width: 0;
+            height: 0;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-bottom: 35px solid white;
+            position: relative;
+            left: 200px;
+            bottom: 25px;
+            display: none;
+        }
+        #content {
+            width: 100%;
+            /*background-color: #F9E0A4;*/
+            background-color: white;
+            position: relative;
+            bottom: 55px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 50px;
+            display: none;
+            margin-top: none;
+            z-index: -15;
+        }
+
+        .polkaDots {
+            background-image: url("../img/pattern_polkaDot_16Nov6.png");
+            background-repeat: repeat;
+            background-size: 50px 50px;
+        }
+
+        .contentPreview{
+            padding: 25px;
+            width: 90%;
+        }
+
+        #aboutPreview {
+        }
+
+            .aboutPreview__cols{
+                display: inline-block;
+                width: 40%;
+                margin: 3%;
+                vertical-align: top;
+            }
+
+            #aboutPreview__col1{
+            }
+
+                #about-polkaDots {
+                    height: 100px;
+                    /*position: absolute;
+                    bottom: 50px;
+                    right: 50px;*/
+                    z-index: -10;
+                    margin-bottom: 50px;
+                }
+
+                #profilePic {
+                    width: 100%;
+                    height: 300px;
+                    background-color: green;
+
+                }
+
+            #aboutPreview__col2{
+                width: 325px;
+            }
+
+                #aboutPreview__col2 p {
+                }
+
+                #aboutPreview__col2 .link-button {
+                    display: block;
+                    margin-top: 75px;
+                    width: 40%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }

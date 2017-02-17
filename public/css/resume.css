@@ -1,0 +1,144 @@
+/*RESUME CSS*/
+
+
+#resumeFlexBox {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+    margin: 50px auto;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+    #mainResumeInfo {
+        min-width: 275px;
+        flex-grow: 3;
+        flex-basis: 0;
+        padding: 15px 30px 50px 30px;
+        /*margin-left: 15px;*/
+    }
+
+        #mainResumeInfo h2 {
+        }
+
+        .resumeInfoFlexBox {
+            display: flex;
+            flex-direction: column;
+        }
+
+            .resumeBulletPoint {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: center;
+                align-content: flex-start;
+                padding: 15px 0;
+                border-bottom: 1px solid #200535;
+            }
+
+            .resumeCol1 {
+
+                flex-grow: 2;
+                flex-basis: 0;
+                margin-right: 35px;
+            }
+
+            .resumeCol2 {
+                flex-grow: 1;
+                flex-basis: 0;
+            }
+
+    #resumeSideBar {
+        min-width: 200px;
+        flex-grow: 1;
+        flex-basis: 0;
+
+        background-color: #F9E0A4;
+        padding: 30px;
+        /*margin-right: 15px;*/
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+        #resumeSideBar img {
+            margin: 25px auto 25px auto;
+            display: block;
+            border-radius: 50%;
+            background-color: white;
+        }
+
+        #resumeSideBar h1 {
+            text-align: center;
+        }
+
+        #resumeSideBar h4 {
+            font-size: 16px;
+            margin: 50px auto 0 auto;
+
+        }
+
+        .resumeSkillBox {
+            width: 85%;
+            height: 15px;
+            margin: 5px auto 5px auto;
+            border: 3px solid #200535;
+        }
+
+            .resumeSkillBar {
+                background-color: #FF5000;
+                height: 100%;
+            }
+
+            #photoshopBar {
+                width: 85%;
+            }
+
+            #illustratorBar {
+                width: 90%;
+            }
+
+            #lightroomBar {
+                width: 60%;
+            }
+
+            #htmlBar {
+                width: 60%;
+            }
+
+            #jsBar {
+                width: 55%;
+            }
+
+            #javaBar {
+                width: 75%;
+            }
+
+            #cBar {
+                width: 70%;
+            }
+
+        #resumeSideBar #resumePDFLink {
+            width: 80%;
+            max-width: 275px;
+            height: auto;
+            margin: 100px auto 25px auto;
+            display: block;
+            text-align: center;
+        }
+
+#resumeContactFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    #resumeContact {
+    width: 50%;
+    min-width: 250px;
+    }

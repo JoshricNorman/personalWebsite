@@ -1,0 +1,101 @@
+/*ABOUT*/
+#aboutFlexBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin: 50px auto;
+}
+
+    #aboutDescription {
+        padding: 20px 10px 50px 10px;
+        margin: 0 0 25px 0;
+        flex-basis: 0;
+        flex-grow: 2;
+
+        /*box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);*/
+    }
+
+        #itMe{
+            margin: auto;
+            display: block;
+            width: 90%;
+            max-width: 470px;
+            min-width: 320px;
+            height: auto;
+        }
+
+        #aboutDescription p {
+            /*text-align: center;*/
+            max-width: 470px;
+            width: 85%;
+            margin:  25px auto 0 auto;
+        }
+
+    #addInfoFlexBox {
+        padding: 20px;
+        flex-basis: 0;
+        flex-grow: 1;
+        /*border-left: 1px solid #200535; */
+    }
+
+        /*#contactButts {
+
+        }*/
+
+            #contactButts img {
+                display: block;
+                margin: auto;
+            }
+
+            #contactButts h5 {
+                text-align: center;
+                margin: 15px auto 15px auto;
+                display: block;
+            }
+
+            #elsewhereFlex {
+                display:flex;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                align-items: center;
+                align-content: center;
+
+                width: 95%;
+                /*padding: 0 5%;*/
+                margin: auto;
+            }
+
+                /*#elsewhereFlex a  {
+
+                }*/
+
+                    #elsewhereFlex a img {
+                        border-radius: 50%;
+                        background-color: #200535;
+
+                        width: 30px;
+                        height: auto;
+                        padding: 3px;
+                        margin: 3px;
+
+                        display: inline-block;
+                    }
+
+                    #elsewhereFlex a img:hover {
+                        background-color: #FF5000;
+                    }
+
+
+        #hobbiesFlexBox {
+
+        }
+
+#aboutContactFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 50px;
+}
