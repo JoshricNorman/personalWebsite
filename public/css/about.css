@@ -47,6 +47,8 @@
             #contactButts img {
                 display: block;
                 margin: auto;
+                border-radius: 50%;
+                background-color: #FAD6C0;
             }
 
             #contactButts h5 {
@@ -73,7 +75,7 @@
 
                     #elsewhereFlex a img {
                         border-radius: 50%;
-                        background-color: #200535;
+                        background-color: #DDC1D7;
 
                         width: 30px;
                         height: auto;
@@ -84,7 +86,7 @@
                     }
 
                     #elsewhereFlex a img:hover {
-                        background-color: #FF5000;
+                        background-color: #E45C44;
                     }
 
 

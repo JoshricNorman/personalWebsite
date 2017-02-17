@@ -101,7 +101,7 @@ $(document).ready(function(){
 
         localStorage.setItem('contactMeString', $(this).find("h2").text() );
 
-        $(this).find("h2").text("CONTACT ME!").css("color", "#FF5000");
+        $(this).find("h2").text("CONTACT ME!").css("color", "#E45C44");
     });
     $(document).on( "mouseleave", ".contactMePromptA", function() {
         $(this).animate({
@@ -111,7 +111,7 @@ $(document).ready(function(){
             $(this).find("h2").text( localStorage.getItem('contactMeString') ).css("color", "#200535");
         }
         else {
-            $(this).find("h2").text("CONTACT ME").css("color", "#200535");
+            $(this).find("h2").text("CONTACT ME").css("color", "#2C1414");
         }
     });
 

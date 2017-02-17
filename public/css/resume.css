@@ -58,7 +58,7 @@
         flex-grow: 1;
         flex-basis: 0;
 
-        background-color: #F9E0A4;
+        background-color: #DDC1D7;
         padding: 30px;
         /*margin-right: 15px;*/
         display: flex;
@@ -87,11 +87,11 @@
             width: 85%;
             height: 15px;
             margin: 5px auto 5px auto;
-            border: 3px solid #200535;
+            border: 3px solid #2C1414;
         }
 
             .resumeSkillBar {
-                background-color: #FF5000;
+                background-color: #E45C44;
                 height: 100%;
             }
 

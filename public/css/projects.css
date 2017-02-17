@@ -7,14 +7,14 @@
         font-weight: 600;
         text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
         margin-top: 10px;
-        color: #200535;
+        color: #2C1414;
         position: fixed;
         float: right;
         right: 10%;
     }
 
     #exitProjectInfo:hover {
-        color: #FF5000;
+        color: #E45C44;
     }
 
 
