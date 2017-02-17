@@ -12,14 +12,14 @@ html {
       height:100%;
       margin: 0px auto;
       text-align:center;
-      background-color: #F9E0A4;
+      background-color: #F8CEBE;
     }
 
         #topBar {
           height: 15px;
           width: 100%;
           margin: auto;
-          background-color: #200535;
+          background-color: #2C1414;
           position: fixed;
           z-index: 100;
         }
@@ -28,7 +28,7 @@ html {
             font-family: 'kenyanCoffee';
             font-size: 64px;
             letter-spacing: 10px;
-            color: #FF5000;
+            color: #E45C44;
             margin-bottom: 10px;
             font-weight: normal;
         }
@@ -41,21 +41,21 @@ html {
             font-family: 'Roboto', sans-serif;
             font-size: 24px;
             margin-top: 10px;
-            color: #200535;
+            color: #2C1414;
         }
 
         h4 {
             font-family: 'Roboto', sans-serif;
             font-size: 20px;
             margin-top: 10px;
-            color: #200535;
+            color: #2C1414;
         }
 
         p {
             font-family: 'Roboto', sans-serif;
             font-size: 16px;
             font-weight: 500;
-            color: #200535;
+            color: #2C1414;
             text-align: left;
             line-height: 150%;
 
@@ -70,11 +70,11 @@ html {
             font-family: 'Roboto', sans-serif;
             font-size: 18px;
             font-weight: 400;
-            color: #200535;
+            color: #2C1414;
 
             padding: 12.5px 15px;
 
-            border: 5px solid #200535;
+            border: 5px solid #2C1414;
             border-radius: 3000px;
             text-decoration: none;
         }
@@ -83,11 +83,11 @@ html {
             font-family: 'Roboto', sans-serif;
             font-size: 18px;
             font-weight: 900;
-            color: #FF5000;
+            color: #E45C44;
 
             padding: 12.5px 15px;
 
-            border: 5px solid #FF5000;
+            border: 5px solid #E45C44;
             border-radius: 3000px;
             text-decoration: none;
         }
@@ -95,7 +95,7 @@ html {
         header {
             padding-top: 200px;
             padding-bottom: 0px;
-            background-color: #F9E0A4;
+            background-color: #F8CEBE;
         }
             nav {
                 margin-top: 50px;
@@ -122,7 +122,7 @@ html {
 
             nav  #navImages .navButt a{
                 text-decoration: none;
-                color: #200535;
+                color: #2C1414;
                 text-align: center;
             }
 
@@ -143,7 +143,7 @@ html {
                 position: relative;
                 /*background-color: pink;*/
                 border-radius: 50%;
-                background-color: white;
+                background-color: #DDC1D7;
             }
 
             figcaption {
@@ -168,7 +168,7 @@ html {
             height: 0;
             border-left: 25px solid transparent;
             border-right: 25px solid transparent;
-            border-bottom: 35px solid white;
+            border-bottom: 35px solid #DDC1D7;
             position: relative;
             left: 200px;
             bottom: 25px;
@@ -176,8 +176,8 @@ html {
         }
         #content {
             width: 100%;
-            /*background-color: #F9E0A4;*/
-            background-color: white;
+            /*background-color: #F8CEBE;*/
+            background-color: #DDC1D7;
             position: relative;
             bottom: 55px;
             margin-left: auto;
