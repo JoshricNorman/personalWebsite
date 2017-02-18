@@ -94,12 +94,13 @@ $(document).ready(function(){
         $("#backHomeText").css("opacity", "0" );
     });
 
-    //  Function to show what porfolio box is being selected
+    //  Functions to determine what contactPrompts show you
     $(document).on( "mouseenter", ".contactMePromptA", function() {
         $(this).animate({
             bottom: '3px' });
 
-        localStorage.setItem('contactMeString', $(this).find("h2").text() );
+        if( $(this).attr("id") != "contactMePromptActive" )
+            localStorage.setItem('contactMeString', $(this).find("h2").text() );
 
         $(this).find("h2").text("CONTACT ME!").css("color", "#E45C44");
     });
@@ -107,12 +108,17 @@ $(document).ready(function(){
         $(this).animate({
             bottom: '0px' });
 
-        if( localStorage.getItem('contactMeString') != null ) {
+        if( localStorage.getItem('contactMeString') != null && $(this).attr("id") != "contactMePromptActive" )
             $(this).find("h2").text( localStorage.getItem('contactMeString') ).css("color", "#200535");
-        }
-        else {
-            $(this).find("h2").text("CONTACT ME").css("color", "#2C1414");
-        }
+    });
+    $(document).on( "click", ".contactMePromptA", function( event ) {
+        event.preventDefault();
+        $(this).attr("id", "contactMePromptActive");
+        $(this).find("h2").text("CONTACT ME!").css("color", "#E45C44");
+        $(this).children().fadeOut( "fast", function() {
+            $(this).fadeIn("slow");
+            $(this).find("p").fadeIn("slow");
+        } );
     });
 
     /* ABOUT */

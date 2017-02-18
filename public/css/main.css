@@ -12,6 +12,15 @@ html {
       margin: 0px auto;
     }
 
+        #topBar {
+          height: 5px;
+          width: 100%;
+          margin: auto;
+          background-color: #2C1414;
+          position: fixed;
+          z-index: 100;
+        }
+
         h1 {
             font-family: 'kenyanCoffee';
             font-size: 36px;
@@ -90,6 +99,7 @@ html {
             border: 5px solid #2C1414;
             border-radius: 3000px;
             text-decoration: none;
+            z-index: 100;
         }
 
         .link-button:hover {
@@ -116,6 +126,7 @@ html {
                 background-color: #FAD6C0;
                 /*background: rgba(255, 255, 255, 0.85);*/
                 position: fixed;
+                top: 5px;
                 z-index: 10;
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
@@ -377,4 +388,12 @@ html {
                             line-height: 45px;
                             width: 200px;
                             margin: auto;
+                        }
+
+                        .contactMePrompt p {
+                            text-align: center;
+                            margin: auto;
+                            margin-top: 25px;
+                            /*visibility: hidden;*/
+                            display: none;
                         }

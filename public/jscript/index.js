@@ -74,19 +74,19 @@ $(document).ready(function(){
                 case -1:
                 case 0:
                         $("#aboutPreview").siblings().css("display", "none");
-                        $("#aboutPreview").css("display", "block");
+                        $("#aboutPreview").css("display", "flex");
                         break;
                 case 1:
                         $("#resumePreview").siblings().css("display", "none");
-                        $("#resumePreview").css("display", "block");
+                        $("#resumePreview").css("display", "flex");
                         break;
                 case 2:
                         $("#portfolioPreview").siblings().css("display", "none");
-                        $("#portfolioPreview").css("display", "block");
+                        $("#portfolioPreview").css("display", "flex");
                         break;
                 case 3:
                         $("#findMePreview").siblings().css("display", "none");
-                        $("#findMePreview").css("display", "block");
+                        $("#findMePreview").css("display", "flex");
                         break;
                 case 4:
                         $("#contactMePreview").siblings().css("display", "none");

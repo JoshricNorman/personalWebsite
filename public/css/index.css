@@ -16,7 +16,7 @@ html {
     }
 
         #topBar {
-          height: 15px;
+          height: 5px;
           width: 100%;
           margin: auto;
           background-color: #2C1414;
@@ -73,6 +73,11 @@ html {
             font-size: 18px;
             font-weight: 400;
             color: #2C1414;
+            display: block;
+            width: 50%;
+            max-width: 275px;
+            min-width: 125px;
+            margin: 25px auto 25px auto;
 
             padding: 12.5px 15px;
 
@@ -107,26 +112,26 @@ html {
                 margin-right: auto;
             }
 
-            nav #navImages {
-                margin-bottom: 0;
-            }
-            nav  #navImages .navButt {
-                display: inline;
-                margin-left: 3%;
-                margin-right: 3%;
-                text-align: center;
-                font-family: 'Roboto', sans-serif;
-                font-size: 20px;
-                font-weight: 900;
-                text-decoration: none;
-                /*background-color: orange;*/
-            }
+                nav #navImages {
+                    margin-bottom: 0;
+                }
+                    nav  #navImages .navButt {
+                        display: inline;
+                        margin-left: 3%;
+                        margin-right: 3%;
+                        text-align: center;
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 20px;
+                        font-weight: 900;
+                        text-decoration: none;
+                        /*background-color: orange;*/
+                    }
 
-            nav  #navImages .navButt a{
-                text-decoration: none;
-                color: #2C1414;
-                text-align: center;
-            }
+                    nav  #navImages .navButt a{
+                        text-decoration: none;
+                        color: #2C1414;
+                        text-align: center;
+                    }
 
             figure {
                 min-width: 100px;
@@ -196,51 +201,43 @@ html {
             background-size: 50px 50px;
         }
 
-        .contentPreview{
-            padding: 25px;
+
+        .contentPreview {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;;
+            align-content: center;
+            padding: 100px 5% 50px 5%;
             width: 90%;
         }
 
-        #aboutPreview {
-        }
+            .previewColumn {
+                width:  45%;
+                min-width: 280px;
+                margin-bottom: 50px;
+                padding-left: 1%;
+                padding-right: 1%;
 
-            .aboutPreview__cols{
-                display: inline-block;
-                width: 40%;
-                margin: 3%;
-                vertical-align: top;
             }
 
-            #aboutPreview__col1{
-            }
+            #aboutCol1{
 
-                #about-polkaDots {
-                    height: 100px;
-                    /*position: absolute;
-                    bottom: 50px;
-                    right: 50px;*/
-                    z-index: -10;
-                    margin-bottom: 50px;
-                }
+            }
 
                 #profilePic {
-                    width: 100%;
-                    height: 300px;
-                    background-color: green;
-
+                    display: block;
+                    margin: auto;
+                    width: 85%;
+                    height: auto;
                 }
 
-            #aboutPreview__col2{
-                width: 325px;
+
+            #aboutCol2{
+
             }
 
-                #aboutPreview__col2 p {
-                }
-
-                #aboutPreview__col2 .link-button {
-                    display: block;
-                    margin-top: 75px;
-                    width: 40%;
-                    margin-left: auto;
-                    margin-right: auto;
+                #aboutCol2 p {
+                    margin-bottom: 35px;
                 }

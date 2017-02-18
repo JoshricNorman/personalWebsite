@@ -38,6 +38,8 @@
         flex-basis: 0;
         flex-grow: 1;
         /*border-left: 1px solid #200535; */
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+
     }
 
         /*#contactButts {
@@ -91,7 +93,13 @@
 
 
         #hobbiesFlexBox {
+            text-align: center;
+            margin-top: 60px;
+        }
 
+        #hobbiesFlexBox h5 {
+            color: #7C4948;
+            display: block;
         }
 
 #aboutContactFlex {
