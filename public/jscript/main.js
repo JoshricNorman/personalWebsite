@@ -113,12 +113,16 @@ $(document).ready(function(){
     });
     $(document).on( "click", ".contactMePromptA", function( event ) {
         event.preventDefault();
-        $(this).attr("id", "contactMePromptActive");
-        $(this).find("h2").text("CONTACT ME!").css("color", "#E45C44");
-        $(this).children().fadeOut( "fast", function() {
-            $(this).fadeIn("slow");
-            $(this).find("p").fadeIn("slow");
-        } );
+        // $(this).attr("id", "contactMePromptActive");
+        // $(this).find("h2").text("CONTACT ME!").css("color", "#E45C44");
+        // $(this).children().fadeOut( "fast", function() {
+        //     $(this).fadeIn("slow");
+        //     $(this).find("p").fadeIn("slow");
+        // } );
+        // $('.contactContainer').append("<div><h4>PHONE</h4><p>858.381.7928</p><h4>EMAIL</h4><p>joshricaurea@gmail.com</p></div>");
+        $.get( 'contact.html').done( function( data ) {
+                $('div.contactContainer').html(data);
+        });
     });
 
     /* ABOUT */
@@ -131,18 +135,10 @@ $(document).ready(function(){
     $(document).on( "mouseenter", ".portfolioFlexChildA", function() {
         $(this).animate({
             bottom: '3px' });
-
-        // if( $(this).find(".portfolioFlexChild").attr("id") == "portfolioContact" ) {
-        //     $(this).find("h2").text("CONTACT ME!").css("color", "#FF5000");
-        // }
     });
     $(document).on( "mouseleave", ".portfolioFlexChildA", function() {
         $(this).animate({
             bottom: '0px' });
-
-        // if( $(this).find(".portfolioFlexChild").attr("id") == "portfolioContact" ) {
-        //     $(this).find("h2").text("LIKE WHAT YOU SEE?").css("color", "#200535");
-        // }
     });
 
     // Function to change the content of the page to the correct project on click
