@@ -12,7 +12,7 @@
 
         <!-- STYLE SHEETS-->
         <link rel="stylesheet" type="text/css" href="css/main.css" />
-        <link rel="stylesheet" type="text/css" href="css/portfolio.css" />
+        <link rel="stylesheet" type="text/css" href="css/projects.css" />
 
         <link rel="stylesheet" type="text/css" href="" id="tempCSS" />
 
@@ -70,48 +70,50 @@
             <!-- Fill with AJAX stuff -->
             <section id="mainContent">
                 <div id="container">
-                    <div id="portfolioDescription">
-                        <p>
-                            Below are a collection of some of my works from around
-                            2013 onward. </br> Click on each box to see additional
-                            images and information for each project.
-                        </p>
+                    <a href="/portfolio" id="exitProjectInfo">&times;</a>
+
+                    <div id="projectInfoContainer">
+                        <img src="img/BG_15-16_header.jpg"
+                            class="projectImg" alt="Bear Garden Senior Send Off" id="projectHeaderImg">
+
+                        <p id="projectDesription">
+                            This was my final year working on Bear Garden graphics. For
+                            these posters, I really wanted to push myself- creating different
+                            facial expressions for certain bears. I also began
+                            experimenting with lighting. While I wasn't specifically asked
+                            to, I tried to incorporate Disney in each design :)
+                            </br>
+                            </br>
+                            Click on each image to zoom in.
+                        </P>
+
+                        <img src="img/ASCE_BGOct_2015Aug13_Poster.jpg" class="projectImg" alt="October 2015 - Pirate Theme">
+
+                        <img src="img/ASCE_BGNov_2015Oct5_poster.jpg" class="projectImg" alt="November 2015 - Autumn Theme">
+
+                        <img src="img/ASCE_BGJan_2016Jan6_poster.jpg" class="projectImg" alt="January 2016 - Rapunzel Theme">
+
+                        <img src="img/ASCE_BGFeb_2016Feb23_poster.jpg" class="projectImg" alt="March 2016 - Underwater Theme">
+
+                        <img src="img/ASCE_BGSenior_2016June17_poster.jpg" class="projectImg" alt="June 2016 -Senior Send Off">
+
+                        <img src="img/bearGarden1516_together.png" class="projectImg" alt="Bear Garden 2015-16">
+
                     </div>
 
-                    <div id="portfolioFlexBox">
-                            <!-- COPY HERE -->
-                            <a href="/bearGarden1516" class="portfolioFlexChildA">
-                                <div class="portfolioFlexChild">
-                                    <img src="img/BG_15-16_preview.jpg">
+                    <div id="projectModal">
+                        <a href="#" id="exitModal">&times;</a>
 
-                                    <h5>Bear Garden 2015-17</h5>
+                        <img id="modalImg">
 
-                                    <div style="clear:both"></div>
-                                </div>
-                            </a>
-                            <!-- END COPY HERE -->
-
-
-                            <!-- END PROJECTS -->
-                            <a href="#"  class="contactMePromptA" id="portfolioContact">
-                                <div class="contactMePrompt">
-                                    <img src="img/homeNav_Contact_16Sep18.png">
-
-                                    <h2>
-                                        LIKE WHAT YOU SEE?
-                                    </h2>
-                                    <p>
-                                        <b>Phone</b> 858.381.7928 <br> <b>Email</b> joshricaurea@gmail.com
-                                    </p>
-                                </div>
-                            </a>
-                    </div> <!--End FlexBox -->
+                        <p id="modalCaption"></p>
+                    </div>
                 </div> <!--End container -->
 
                 <div class="contactContainer"></div>
 
                 <div id="footer">
-                    <a href="#" style="text-decoration:none" id="backItUpA">
+                    <a href="#" style="text-decoration:none"  id="backItUpA">
                         <p id="backItUp">
                             &#8593;
                             <br>

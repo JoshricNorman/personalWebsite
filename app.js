@@ -23,19 +23,9 @@ app.get('/portfolio', function( req, res) {
 });
 
  // PORTFOLIO PROJECTS
-    app.get('/project1', function( req, res) {
+    app.get('/bearGarden1516', function( req, res) {
 
-        res.sendFile(path.join(__dirname + '/project1.html'));
-    });
-
-    app.get('/project2', function( req, res) {
-
-        res.sendFile(path.join(__dirname + '/project2.html'));
-    });
-
-    app.get('/project3', function( req, res) {
-
-        res.sendFile(path.join(__dirname + '/project3.html'));
+        res.sendFile(path.join(__dirname + '/bearGarden1516.html'));
     });
 
  // END PORTFOLIO PROJECTS

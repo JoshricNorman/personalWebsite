@@ -121,8 +121,12 @@ $(document).ready(function(){
         if( $( '.contactContainer' ).is( ':empty' ) ) {
             $.get( 'contact.html').done( function( data ) {
                     $('.contactContainer').html(data).css("visibility", "visible").hide().fadeIn('slow');
+                    var first = "joshricaurea";
+                    var last = "gmail.com"
+                    $('.contactContainer').find('h4').text(first + '@' + last)
             });
         }
+
 
         $('html, body').animate({
           scrollTop: $('.contactContainer').offset().top
