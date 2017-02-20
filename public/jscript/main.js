@@ -79,8 +79,12 @@ $(document).ready(function(){
 
         $("#tempCSS").attr('href','css/' + pageName + '.css')
 
-        $('#container').remove();
-        $('#mainContent').load(url + ' #container').hide().fadeIn('slow');
+        // $('#container').remove();
+        // $('#mainContent').load(url + ' #container').hide().fadeIn('slow');
+
+        $('#mainContent').remove();
+        $('#contentWrapper').load(url + ' #mainContent').hide().fadeIn('slow');
+
     });
 
 
@@ -113,16 +117,22 @@ $(document).ready(function(){
     });
     $(document).on( "click", ".contactMePromptA", function( event ) {
         event.preventDefault();
-        // $(this).attr("id", "contactMePromptActive");
-        // $(this).find("h2").text("CONTACT ME!").css("color", "#E45C44");
-        // $(this).children().fadeOut( "fast", function() {
-        //     $(this).fadeIn("slow");
-        //     $(this).find("p").fadeIn("slow");
-        // } );
-        // $('.contactContainer').append("<div><h4>PHONE</h4><p>858.381.7928</p><h4>EMAIL</h4><p>joshricaurea@gmail.com</p></div>");
-        $.get( 'contact.html').done( function( data ) {
-                $('div.contactContainer').html(data);
-        });
+
+        if( $( '.contactContainer' ).is( ':empty' ) ) {
+            $.get( 'contact.html').done( function( data ) {
+                    $('.contactContainer').html(data).css("visibility", "visible").hide().fadeIn('slow');
+            });
+        }
+
+        $('html, body').animate({
+          scrollTop: $('.contactContainer').offset().top
+        }, "slow");
+
+    });
+
+    $(document).on("click", "#backItUpA", function( event ) {
+        event.preventDefault();
+        $('html, body').animate({ scrollTop: 0 }, "slow" );
     });
 
     /* ABOUT */
@@ -151,8 +161,8 @@ $(document).ready(function(){
 
         $("#tempCSS").attr('href','css/projects.css');
 
-        $('#container').remove();
-        $('#mainContent').load(url + ' #container').hide().fadeIn('slow');
+        $('#mainContent').remove();
+        $('#contentWrapper').load(url + ' #mainContent').hide().fadeIn('slow');
     });
 
     /* Projects */

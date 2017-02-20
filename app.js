@@ -33,6 +33,11 @@ app.get('/portfolio', function( req, res) {
         res.sendFile(path.join(__dirname + '/project2.html'));
     });
 
+    app.get('/project3', function( req, res) {
+
+        res.sendFile(path.join(__dirname + '/project3.html'));
+    });
+
  // END PORTFOLIO PROJECTS
 
 app.use(express.static(__dirname + '/public'));

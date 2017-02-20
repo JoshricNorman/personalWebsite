@@ -99,7 +99,6 @@ html {
             border: 5px solid #2C1414;
             border-radius: 3000px;
             text-decoration: none;
-            z-index: 100;
         }
 
         .link-button:hover {
@@ -143,10 +142,12 @@ html {
                     margin: 0px;
 
                     /*background-color: #2C1414;*/
+                    transition: background-color 0.5s ease;
                     background-color: #FFFFFF;
                 }
 
                 #headerLogoContainer:hover {
+                    transition: background-color 0.5s ease;
                     background-color: #E45C44;
                 }
 
@@ -188,6 +189,7 @@ html {
                         font-family: 'Roboto', sans-serif;
                         text-decoration: none;
                         color: #2C1414;
+                        transition: color 0.5s ease;
                         font-size: 16px;
                         font-weight: 500;
                         list-style: none;
@@ -199,16 +201,12 @@ html {
 
                     #mainNav a:hover {
                         color: #E45C44;
+                        transition: color 0.5s ease;
                     }
 
                     #navButtContainerActive {
-                        /*background-color: #E45C44;*/
-                        /*font-weight: 900;*/
                         border-bottom: 5px solid #E45C44;
                     }
-                    /*#navButtContainerActive a:hover {
-                        color:  #DDC1D7;
-                    }*/
 
                 #hamburgerButton {
                     width: 3%;
@@ -251,7 +249,7 @@ html {
 
 
             #contentWrapper {
-                height: 90%;
+                /*height: 90%;*/
                 width: 100%;
                 position: absolute;
                 top: 60px;
@@ -342,10 +340,16 @@ html {
                     left: 0;
                     right: 0;
                     position: absolute;
-                    padding: 10px 0 100px 0;
-                    width: 85%;
+                    padding: 10px 0 0 0;
+                    /*width: 85%;*/
+                    width: 100%;
                     height: auto;
                 }
+
+                    #container {
+                        width: 85%;
+                        margin: auto;
+                    }
 
                 .contactMePromptA {
                     margin: 15px;
@@ -397,3 +401,53 @@ html {
                             /*visibility: hidden;*/
                             display: none;
                         }
+
+                .contactContainer {
+                    /*width: 100%;*/
+                    /*height: 100%;*/
+                    padding: 50px 50px 100px 50px;
+                    margin:  100px auto 0 auto;
+                    /*display: none;*/
+                    visibility: hidden;
+                    background-color: #DDC1D7;
+
+                    /*bottom: -5px;*/
+                }
+
+                    .contactContainer a {
+                        color: #E45C44;
+                        text-decoration: none;
+                        display: block;
+                    }
+
+                    .contactContainer a:hover {
+                        text-decoration: underline;
+                    }
+
+                        .contactContainer a h4 {
+                            color: #E45C44;
+                        }
+
+                #footer {
+                    background-color: #DDC1D7;
+                    width: 100%;
+                    padding: 50px 0;
+                    text-align: center;
+                }
+                    #backItUp {
+                        margin: auto;
+                        display: inline-block;
+                        color: #E45C44;
+                        text-align: center;
+
+                        opacity: 0.75;
+                        transition: opacity 0.5s ease
+                        transition: font-weight 0.5s ease;
+                    }
+
+                    #backItUp:hover {
+                        opacity: 1;
+                        font-weight: 900;
+                        transition: opacity 0.5s ease
+                        transition: font-weight 0.5s ease;
+                    }
