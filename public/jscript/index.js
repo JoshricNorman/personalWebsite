@@ -16,7 +16,7 @@ $(document).ready(function(){
     /* Function to show the title of each navigation button  and move
      * each navigation button when mouse enters
      */
-    $(".navButt").mouseenter(function(){
+    $(document).on("mouseenter", ".navButt", function() {
         $(this).find("img").animate({
             bottom: '15px' });
         $(this).find("figcaption").fadeTo( "slow", 1);
@@ -25,7 +25,7 @@ $(document).ready(function(){
     /* Function to hide the title of each navigation button  and move
      * each navigation button back to orignal position when mouse leaves
      */
-    $(".navButt").mouseleave(function(){
+    $(document).on("mouseleave", ".navButt", function() {
         $(this).find("img").animate({
             bottom: '0px'
         });
@@ -37,7 +37,7 @@ $(document).ready(function(){
      *  - to move the speech triangle and make it appear/disappear when nav
      *    buttons are selected and deselected
      */
-    $(".navButt").click(function( event ){
+    $(document).on("click", ".navButt", function( event ){
         event.preventDefault();
         $('html, body').animate({
           scrollTop: $("#homeNav").offset().top
