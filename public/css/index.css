@@ -274,10 +274,100 @@ html {
                 #previewCol1 {
                     flex-basis: 0;
                     flex-grow: 2;
+                    min-width: 400px;
                 }
 
+                    #slideShow {
+                        max-width: 450px;
+                        margin: auto;
+                        width: 90%;
+                        position: relative;
+                    }
+
+                    #slideShow img {
+                        width: 100%;
+                        height: auto;
+                        display: block;
+                    }
+
+                    .slides {
+                        display: none;
+                    }
+
+                    #prevSlide, #nextSlide {
+                        cursor: pointer;
+                        /*position: relative;*/
+                        position: absolute;
+                        top: 45%;
+                        width: auto;
+                        color: white;
+                        font-size: 24px;
+                        font-weight: 900;
+                        line-height: 0px;
+                        padding: 25px 10px;
+                        opacity: 0.75;
+                    }
+
+                    #prevSlide {
+                        left: 5px;
+                    }
+
+                    #nextSlide {
+                        right: 5px;
+                    }
+
+                    #prevSlide:hover, #nextSlide:hover {
+                        background-color: #E45C44;
+                        transition: background-color 0.5s ease;
+                        opacity: 0.95;
+                        transition: opacity 0.5s ease;
+                    }
+
+                    .slideIndex {
+                        color: white;
+                        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 12px;
+                        position: absolute;
+                        bottom: 0;
+                        padding: 8px 12px;
+                    }
+
+                    .dot {
+                        cursor: pointer;
+                        height: 15px;
+                        width: 15px;
+                        border-radius: 50%;
+                        margin: 15px 5px;
+                        display: inline-block;
+                        background-color: #DDC1D7;
+                        transition: background-color 0.5s ease;
+                    }
+
+                    .activeDot, .dot:hover {
+                        background-color: #E45C44;
+                        /*transition: background-color 0.5s ease;*/
+                    }
+
+                    .fade {
+                        -webkit-animation-name: fade;
+                        -webkit-animation-duration: 1.5s;
+                        animation-name: fade;
+                        animation-duration: 1.5s;
+                    }
+
+                    @-webkit-keyframes fade {
+                      from {opacity: .4}
+                      to {opacity: 1}
+                    }
+
+                    @keyframes fade {
+                      from {opacity: .4}
+                      to {opacity: 1}
+                    }
                 #previewCol2 {
                     flex-basis: 0;
                     flex-grow: 1;
                     min-width: 225px;
+                    padding: 15px 30px;
                 }

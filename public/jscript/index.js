@@ -104,4 +104,49 @@ $(document).ready(function(){
 
     });
 
+    // PORTFOLIO
+    var currSlide = 1;
+    showSlides( currSlide );
+
+    $(document).on("click", "#prevSlide", function() {
+        currSlide--;
+        showSlides();
+    });
+
+    $(document).on("click", "#nextSlide", function() {
+        currSlide++;
+        showSlides();
+    });
+
+    $(document).on("click", ".dot", function() {
+        var currDot = $(this).attr("id");
+        var currDotArray = currDot.split("");
+        currDot = currDotArray[currDotArray.length - 1];
+        currSlide = currDot;
+        showSlides();
+    });
+
+
+    function showSlides() {
+        var slideCount = document.getElementsByClassName('slides');
+        var dotCount = document.getElementsByClassName('dot');
+        if( currSlide >  slideCount.length)
+            currSlide = 1;
+        if( currSlide <= 0 )
+            currSlide = slideCount.length;
+
+        //turn off all slides first
+        for( var i = 0; i < slideCount.length; i++ ) {
+            slideCount[i].style.display = "none";
+        }
+
+        //turn off all active dots
+        for( var i = 0; i < dotCount.length; i++ ) {
+            dotCount[i].className = dotCount[i].className.replace( " activeDot", "");
+        }
+
+        slideCount[currSlide - 1].style.display = "block";
+        dotCount[ currSlide - 1].className += " activeDot";
+    }
+
 });

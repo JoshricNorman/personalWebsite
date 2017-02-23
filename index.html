@@ -151,12 +151,44 @@
 
             <div id="portfolioPreview"  class="contentFlexBox">
                 <h4 class="previewDesc">
-                  Here's one of my works:
+                  Here's one of my projects:
                 </h4>
 
                 <div class="previewFlexBox">
                     <div id="previewCol1" class="previewColumns">
-                        <img src="img/BG1516/BG_15-16_preview.jpg">
+                        <!-- <img src="img/BG1516/BG_15-16_preview.jpg"> -->
+                        <div id="slideShow">
+                            <!-- IMAGE ONE -->
+                            <div class="slides fade" style="display:block">
+                                <div class="slideIndex">1 / 3</div>
+
+                                <img src="img/BG1516/BG_15-16_preview.jpg">
+                            </div>
+
+                            <!-- IMAGE TWO -->
+                            <div class="slides fade">
+                                <div class="slideIndex">2 / 3</div>
+
+                                <img src="img/BG1516/BG_15-16_preview2.jpg">
+                            </div>
+
+                            <!-- IMAGE THREE -->
+                            <div class="slides fade">
+                                <div class="slideIndex">3 / 3</div>
+
+                                <img src="img/BG1516/BG_15-16_preview3.jpg">
+                            </div>
+
+                            <a id="prevSlide">&#10094;</a>
+
+                            <a id="nextSlide">&#10095;</a>
+                        </div>
+
+                        <div style="text-align:center">
+                          <span class="dot" id="dot1"></span>
+                          <span class="dot" id="dot2"></span>
+                          <span class="dot" id="dot3"></span>
+                        </div>
                     </div>
 
                     <div id="previewCol2" class="previewColumns">
