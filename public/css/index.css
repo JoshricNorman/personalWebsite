@@ -104,71 +104,56 @@ html {
             padding-bottom: 0px;
             background-color: #DDC1D7;
         }
-            nav {
-                margin-top: 50px;
-                width: 100%;
-                height: 100%;
-                margin-left: auto;
-                margin-right: auto;
+
+        #homeNav {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            padding: 50px 5% 50px 5%;
+            width: 75%;
+            min-width: 450px;
+            margin: auto;
+        }
+
+            .navButt {
+                padding: 25px;
+                /*max-width: 130px;*/
+                /*width: 130px;*/
+                width: 30%;
+                height: 200px;
+                flex-basis: 0;
+                flex-grow: 1;
+
             }
 
-                nav #navImages {
-                    margin-bottom: 0;
+                .navButt img {
+                    display: block;
+                    position: relative;
+                    margin: auto;
+                    width:100%;
+                    height: auto;
+                    max-width: 127px;
+                    border-radius: 50%;
+                    background-color: #FAD6C0;
                 }
-                    nav  #navImages .navButt {
-                        display: inline;
-                        margin-left: 3%;
-                        margin-right: 3%;
-                        text-align: center;
-                        font-family: 'Roboto', sans-serif;
-                        font-size: 20px;
-                        font-weight: 900;
-                        text-decoration: none;
-                        /*background-color: orange;*/
-                    }
 
-                    nav  #navImages .navButt a{
-                        text-decoration: none;
-                        color: #2C1414;
-                        text-align: center;
-                    }
+                .navButt h3 {
+                    display: inline-block;
+                    text-align: center;
+                    margin: 25px auto 10px auto;
+                    display:none;
+                }
 
-            figure {
-                min-width: 100px;
-                width: 15%;
-                height: auto;
-                display:inline-block;
-                margin-left: auto;
-                margin-right: auto;
-                text-align: center;
-            }
-
-            figure img {
-                width: 100%;
-                max-width: 127px;
-                min-width: 110px;
-                position: relative;
-                /*background-color: pink;*/
-                border-radius: 50%;
-                background-color: #FAD6C0;
-            }
-
-            figcaption {
-                top: 5px;
-                opacity: 0;
-                text-align: center;
-                width: 127px;
-                /*background-color: teal;*/
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            figure .anchor {
-                width: 0px;
-                height: 0px;
-                margin: 0 auto;
-                display: inline-block;
-            }
+                .anchor {
+                    margin: auto;
+                    display: block;
+                    position: relative;
+                    width: 1px;
+                    height: 1px;
+                }
 
         #speechTriangle {
             width: 0;
@@ -181,12 +166,13 @@ html {
             bottom: 25px;
             display: none;
         }
+
         #content {
             width: 100%;
             /*background-color: #DDC1D7;*/
             background-color: white;
             position: relative;
-            bottom: 55px;
+            bottom: 30px;
             margin-left: auto;
             margin-right: auto;
             padding-bottom: 50px;
@@ -253,6 +239,10 @@ html {
                         margin-bottom: 35px;
                     }
 
+            #resumePreview {
+                width: 90%;
+            }
+
                 .abilities {
                     padding: 25px 25px 50px 25px;
                 }
@@ -267,11 +257,11 @@ html {
                         margin: 15px auto 0 auto;
                     }
 
-                .previewColumns {
+                .portfolioColumns {
                     padding: 15px;
                 }
 
-                #previewCol1 {
+                #portfolioCol1 {
                     flex-basis: 0;
                     flex-grow: 2;
                     min-width: 400px;
@@ -365,7 +355,7 @@ html {
                       from {opacity: .4}
                       to {opacity: 1}
                     }
-                #previewCol2 {
+                #portfolioCol2 {
                     flex-basis: 0;
                     flex-grow: 1;
                     min-width: 225px;

@@ -1,17 +1,4 @@
 $(document).ready(function(){
-    var currAnchor;
-    var currAnchorId;
-    var whichNav = -1;
-
-    /* Function to move the speechTriangle dynamically as window resizes
-     */
-    $( window ).resize(function(){
-        if( currAnchor != null) {
-            var pos = currAnchor.position();
-            var leftPos = pos.left;
-            $("#speechTriangle").animate({ left: (leftPos  - 25 + 'px')}, 0);
-        }
-    });
 
     /* Function to show the title of each navigation button  and move
      * each navigation button when mouse enters
@@ -19,7 +6,7 @@ $(document).ready(function(){
     $(document).on("mouseenter", ".navButt", function() {
         $(this).find("img").animate({
             bottom: '15px' });
-        $(this).find("figcaption").fadeTo( "slow", 1);
+        $(this).find("h3").fadeTo( "slow", 1);
     });
 
     /* Function to hide the title of each navigation button  and move
@@ -29,7 +16,20 @@ $(document).ready(function(){
         $(this).find("img").animate({
             bottom: '0px'
         });
-        $(this).find("figcaption").fadeTo( "slow", 0);
+        $(this).find("h3").fadeTo( "slow", 0);
+    });
+
+    var currAnchor;
+    var currAnchorPos;
+
+    /* Function to move the speechTriangle dynamically as window resizes
+     */
+    $( window ).resize(function(){
+        if( currAnchor != null) {
+            currAnchorPos = currAnchor.position();
+            var moveLeft = currAnchorPos.left + ( currAnchor.outerWidth() /2);
+            $("#speechTriangle").animate({ left: ( moveLeft  - 25 ) }, 0);
+        }
     });
 
     /* Function to:
@@ -46,53 +46,25 @@ $(document).ready(function(){
         $(this).siblings("#navButtActive").removeAttr("id"); //set other active nav buttons as inactive
         if( $(this).attr("id") != "navButtActive" ) {
             $(this).attr("id", "navButtActive"); //set curr nav butt as active
-            currAnchor = $(this).find(".anchor");
-            currAnchorId =  $(this).find(".anchor").attr("id");
-            var pos = $(this).find(".anchor").position();
-            var leftPos = pos.left;
+            // currAnchor = $(this).find(".anchor");
+            // var currAnchorPos = currAnchor.position();
+            // var moveLeft = currAnchorPos.left
+
+            currAnchor = $(this);
+            currAnchorPos = currAnchor.position();
+            var moveLeft = currAnchorPos.left + ( $(this).outerWidth() /2);
             $("#speechTriangle").css("display", "block").animate({
-                left: (leftPos  - 25 + 'px')
-            });
-            $("#content").slideDown("fast", function() {
-                $(this).css("display", "block");
-            });
+                 left: moveLeft - 25
+            }, "slow");
 
-            if( currAnchorId != null ) {
-                if ( currAnchorId == "anchorAbout")
-                    whichNav = 0;
-                else if ( currAnchorId == "anchorResume")
-                    whichNav = 1;
-                else if ( currAnchorId == "anchorPortfolio")
-                    whichNav = 2;
-                else if ( currAnchorId == "anchorFind")
-                    whichNav = 3;
-                else if ( currAnchorId == "anchorContact")
-                    whichNav = 4;
-            }
+            var currPreview = $(this).find("a").attr("id");
+            // if( $( '#content' ).is( ':empty' ) ) {
+                $.get( currPreview + '.html').done( function( data ) {
+                //        $('#content').html(data).css("visibility", "visible").hide().fadeIn('slow');
+                    $('#content').html(data).slideDown("slow");
 
-            switch (whichNav) {
-                case -1:
-                case 0:
-                        $("#aboutPreview").siblings().css("display", "none");
-                        $("#aboutPreview").css("display", "flex");
-                        break;
-                case 1:
-                        $("#resumePreview").siblings().css("display", "none");
-                        $("#resumePreview").css("display", "flex");
-                        break;
-                case 2:
-                        $("#portfolioPreview").siblings().css("display", "none");
-                        $("#portfolioPreview").css("display", "flex");
-                        break;
-                case 3:
-                        $("#findMePreview").siblings().css("display", "none");
-                        $("#findMePreview").css("display", "flex");
-                        break;
-                case 4:
-                        $("#contactMePreview").siblings().css("display", "none");
-                        $("#contactMePreview").css("display", "block");
-                        break;
-            }
+                });
+            // }
         }
         else {
             $("#speechTriangle").css("display", "none");
@@ -106,7 +78,7 @@ $(document).ready(function(){
 
     // PORTFOLIO
     var currSlide = 1;
-    showSlides( currSlide );
+    // showSlides( currSlide );
 
     $(document).on("click", "#prevSlide", function() {
         currSlide--;
