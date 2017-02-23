@@ -201,43 +201,83 @@ html {
             background-size: 50px 50px;
         }
 
-
-        .contentPreview {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+        .contentFlexBox {
+            display: inline-flex;
+            flex-direction: column;
             justify-content: center;
-            align-items: flex-start;;
+            align-items: center;
             align-content: center;
-            padding: 100px 5% 50px 5%;
-            width: 90%;
         }
 
-            .previewColumn {
-                width:  45%;
-                min-width: 280px;
-                margin-bottom: 50px;
-                padding-left: 1%;
-                padding-right: 1%;
-
+            .previewDesc {
+                width: 100%;
+                margin: 100px auto 0 auto;
+                text-align: center;
+                color: #E45C44;
             }
 
-            #aboutCol1{
-
+            .previewFlexBox {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                padding: 50px 5% 50px 5%;
+                width: 90%;
             }
 
-                #profilePic {
-                    display: block;
-                    margin: auto;
-                    width: 85%;
-                    height: auto;
+                .aboutColumn {
+                    width:  45%;
+                    min-width: 280px;
+                    margin-bottom: 50px;
+                    padding-left: 1%;
+                    padding-right: 1%;
                 }
 
+                #aboutCol1{
+                }
 
-            #aboutCol2{
+                    #profilePic {
+                        display: block;
+                        margin: auto;
+                        width: 85%;
+                        height: auto;
+                    }
 
-            }
 
-                #aboutCol2 p {
-                    margin-bottom: 35px;
+                #aboutCol2{
+                }
+
+                    #aboutCol2 h4 {
+                        margin-bottom: 35px;
+                    }
+
+                .abilities {
+                    padding: 25px 25px 50px 25px;
+                }
+
+                    .abilities img {
+                        display: block;
+                        margin: auto;
+                    }
+
+                    .abilities p {
+                        text-align: center;
+                        margin: 15px auto 0 auto;
+                    }
+
+                .previewColumns {
+                    padding: 15px;
+                }
+
+                #previewCol1 {
+                    flex-basis: 0;
+                    flex-grow: 2;
+                }
+
+                #previewCol2 {
+                    flex-basis: 0;
+                    flex-grow: 1;
+                    min-width: 225px;
                 }
