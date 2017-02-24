@@ -33,6 +33,13 @@
             margin:  25px auto 0 auto;
         }
 
+        #aboutDescription h5 {
+            max-width: 470px;
+            width: 85%;
+            margin:  35px auto 0 auto;
+            display: block;
+        }
+
     #addInfoFlexBox {
         padding: 20px;
         flex-basis: 0;
@@ -59,37 +66,7 @@
                 display: block;
             }
 
-            #elsewhereFlex {
-                display:flex;
-                flex-wrap: nowrap;
-                justify-content: space-around;
-                align-items: center;
-                align-content: center;
 
-                width: 95%;
-                /*padding: 0 5%;*/
-                margin: auto;
-            }
-
-                /*#elsewhereFlex a  {
-
-                }*/
-
-                    #elsewhereFlex a img {
-                        border-radius: 50%;
-                        background-color: #DDC1D7;
-
-                        width: 30px;
-                        height: auto;
-                        padding: 3px;
-                        margin: 3px;
-
-                        display: inline-block;
-                    }
-
-                    #elsewhereFlex a img:hover {
-                        background-color: #E45C44;
-                    }
 
 
         #hobbiesFlexBox {

@@ -403,31 +403,74 @@ html {
                         }
 
                 .contactContainer {
-                    /*width: 100%;*/
-                    /*height: 100%;*/
                     padding: 20px 50px 50px 50px;
                     margin:  50px auto 0 auto;
-                    /*display: none;*/
                     visibility: hidden;
                     background-color: #DDC1D7;
                     top: 2px;
 
-                    /*bottom: -5px;*/
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    align-items: flex-start;
+                    align-content: center;
                 }
 
-                    .contactContainer a {
-                        color: #E45C44;
-                        text-decoration: none;
-                        display: block;
+                    .contactColumns {
+                        max-width: 450px;
+                        /*min-width: 350px;*/
+                        width: 90%;
+                        padding: 15px;
+                    }
+                    #contactCol1 {
+
                     }
 
-                    .contactContainer a:hover {
-                        text-decoration: underline;
-                    }
-
-                        .contactContainer a h4 {
+                        .contactContainer a {
                             color: #E45C44;
+                            text-decoration: none;
+                            display: block;
                         }
+
+                        .contactContainer a:hover {
+                            text-decoration: underline;
+                        }
+
+                            .contactContainer a h4 {
+                                color: #E45C44;
+                            }
+
+                    #contactCol2 {
+
+                    }
+
+                        #elsewhereFlex {
+                            display:flex;
+                            flex-wrap: nowrap;
+                            justify-content: space-around;
+                            align-items: center;
+                            align-content: center;
+
+                            width: 95%;
+                            /*padding: 0 5%;*/
+                            margin: auto;
+                        }
+
+                                #elsewhereFlex a img {
+                                    border-radius: 50%;
+                                    background-color: #DDC1D7;
+
+                                    width: 30px;
+                                    height: auto;
+                                    padding: 3px;
+                                    margin: 3px;
+
+                                    display: inline-block;
+                                }
+
+                                #elsewhereFlex a img:hover {
+                                    background-color: #E45C44;
+                                }
 
                 #footer {
                     background-color: #DDC1D7;
