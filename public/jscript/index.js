@@ -58,13 +58,10 @@ $(document).ready(function(){
             }, "slow");
 
             var currPreview = $(this).find("a").attr("id");
-            // if( $( '#content' ).is( ':empty' ) ) {
-                $.get( currPreview + '.html').done( function( data ) {
-                //        $('#content').html(data).css("visibility", "visible").hide().fadeIn('slow');
-                    $('#content').html(data).slideDown("slow");
+            $.get( currPreview + '.html').done( function( data ) {
+                $('#content').html(data).slideDown("slow");
 
-                });
-            // }
+            });
         }
         else {
             $("#speechTriangle").css("display", "none");
