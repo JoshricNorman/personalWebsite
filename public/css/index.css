@@ -84,6 +84,7 @@ html {
             border: 5px solid #2C1414;
             border-radius: 3000px;
             text-decoration: none;
+            z-index: 25;
         }
 
         .link-button:hover {
