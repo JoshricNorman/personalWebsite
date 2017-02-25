@@ -8,34 +8,32 @@ app.get('/', function( req, res) {
 });
 
 app.get('/about', function( req, res) {
-
     res.sendFile(path.join(__dirname + '/about.html'));
 });
 
 app.get('/resume', function( req, res) {
-
     res.sendFile(path.join(__dirname + '/resume.html'));
 });
 
 app.get('/portfolio', function( req, res) {
-
     res.sendFile(path.join(__dirname + '/portfolio.html'));
 });
 
  // PORTFOLIO PROJECTS
     app.get('/bearGarden1516', function( req, res) {
-
         res.sendFile(path.join(__dirname + '/bearGarden1516.html'));
     });
 
     app.get('/logosI', function( req, res) {
-
         res.sendFile(path.join(__dirname + '/logosI.html'));
     });
 
     app.get('/environmentalJusticeAffairs', function( req, res) {
-
         res.sendFile(path.join(__dirname + '/eja.html'));
+    });
+
+    app.get('/bearGarden1315', function( req, res) {
+        res.sendFile(path.join(__dirname + '/beargarden1315.html'));
     });
 
 

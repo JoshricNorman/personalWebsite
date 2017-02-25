@@ -42,12 +42,15 @@
             width: 100%;
             height: auto;
             min-width:  450px;
+
         }
 
         .projectImg {
             cursor: zoom-in;
             max-width: 360px;
             height: auto;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
         }
 
         .projectImg:hover {
