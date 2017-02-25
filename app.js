@@ -28,6 +28,17 @@ app.get('/portfolio', function( req, res) {
         res.sendFile(path.join(__dirname + '/bearGarden1516.html'));
     });
 
+    app.get('/logosI', function( req, res) {
+
+        res.sendFile(path.join(__dirname + '/logosI.html'));
+    });
+
+    app.get('/environmentalJusticeAffairs', function( req, res) {
+
+        res.sendFile(path.join(__dirname + '/eja.html'));
+    });
+
+
  // END PORTFOLIO PROJECTS
 
 app.use(express.static(__dirname + '/public'));

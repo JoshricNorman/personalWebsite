@@ -22,7 +22,7 @@
 
         <!-- STYLE SHEETS-->
         <link rel="stylesheet" type="text/css" href="css/main.css" />
-        <link rel="stylesheet" type="text/css" href="css/portfolio.css" />
+        <link rel="stylesheet" type="text/css" href="css/projects.css" />
 
         <link rel="stylesheet" type="text/css" href="" id="tempCSS" />
 
@@ -80,68 +80,54 @@
             <!-- Fill with AJAX stuff -->
             <section id="mainContent">
                 <div id="container">
-                    <div id="portfolioDescription">
-                        <p>
-                            Below are a collection of some of my works from around
-                            2013 onward. </br> Click on each box to see additional
-                            images and information for each project.
-                        </p>
+                    <a href="/portfolio" id="exitProjectInfo">&times;</a>
+
+                    <div id="projectInfoContainer">
+                        <!-- <img src="img/mainImages/homeNav_Portfolio_16Sep18.png" alt="Temp caption A" id="projectHeaderImg"> -->
+
+                        <p class="projectDesc">
+                            A collection of logos- used, unused, or modified beyond my
+                            hands.
+                            <br><br>
+                            Click on each image to zoom in.
+                        </P>
+
+                        <img src="img/logos1/logos1_ues.jpg" class="projectImg" alt="">
+
+                        <img src="img/logos1/logos1_edi.jpg" class="projectImg" alt="Associated Students: Office of Equity, Diversity, and Inclusion">
+
+                        <img src="img/logos1/logos1_ks.jpg" class="projectImg" alt="Korean Studies">
+
+                        <img src="img/logos1/logos1_tks.jpg" class="projectImg" alt="Transnational Korean Studies">
+
+                        <img src="img/logos1/logos1_ss.jpg" class="projectImg" alt="Science Studies">
+
+                        <p class="projectDesc">
+                            I was told this one looks like a craft beer logo or something
+                            and I agree- but I still like how it turned out...
+                        </P>
+
+                        <img src="img/logos1/logos1_fyc.jpg" class="projectImg" alt="First Year Council">
+
+                        <img src="img/logos1/logos1_js.jpg" class="projectImg" alt="Jewish Studies">
+
+                        <img src="img/logos1/logos1_g.jpg" class="projectImg" alt="">
+
                     </div>
 
-                    <div id="portfolioFlexBox">
-                            <!-- COPY HERE -->
-                            <a href="/bearGarden1516" class="portfolioFlexChildA">
-                                <div class="portfolioFlexChild">
-                                    <img src="img/BG1516/BG_15-16_preview.jpg">
+                    <div id="projectModal">
+                        <a href="#" id="exitModal">&times;</a>
 
-                                    <h5>Bear Garden 2015-16</h5>
+                        <img id="modalImg">
 
-                                    <div style="clear:both"></div>
-                                </div>
-                            </a>
-                            <!-- END COPY HERE -->
-
-                            <a href="/logosI" class="portfolioFlexChildA">
-                                <div class="portfolioFlexChild">
-                                    <img src="img/logos1/logos1_preview.jpg">
-
-                                    <h5>Logos I</h5>
-
-                                    <div style="clear:both"></div>
-                                </div>
-                            </a>
-
-                            <a href="/environmentalJusticeAffairs" class="portfolioFlexChildA">
-                                <div class="portfolioFlexChild">
-                                    <img src="img/EJA/eja_preview.jpg">
-
-                                    <h5>Environmental Justice Affairs</h5>
-
-                                    <div style="clear:both"></div>
-                                </div>
-                            </a>
-
-
-                            <!-- END PROJECTS -->
-                            <a href="#"  class="contactMePromptA" id="portfolioContact">
-                                <div class="contactMePrompt">
-                                    <img src="img/mainImages/homeNav_Contact_16Sep18.png">
-
-                                    <h2>
-                                        LIKE WHAT YOU SEE?
-                                    </h2>
-                                    <p>
-                                        <b>Phone</b> 858.381.7928 <br> <b>Email</b> joshricaurea@gmail.com
-                                    </p>
-                                </div>
-                            </a>
-                    </div> <!--End FlexBox -->
+                        <p id="modalCaption"></p>
+                    </div>
                 </div> <!--End container -->
 
                 <div class="contactContainer"></div>
 
                 <div id="footer">
-                    <a href="#" style="text-decoration:none" id="backItUpA">
+                    <a href="#" style="text-decoration:none"  id="backItUpA">
                         <p id="backItUp">
                             &#8593;
                             <br>

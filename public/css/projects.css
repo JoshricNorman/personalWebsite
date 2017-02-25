@@ -54,6 +54,11 @@
             opacity: 0.7;
         }
 
+        .projectDesc {
+            padding-bottom: 50px;
+            padding-top: 25px;
+        }
+
     #projectModal {
         display: none;
         position: fixed;

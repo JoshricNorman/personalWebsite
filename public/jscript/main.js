@@ -161,13 +161,19 @@ $(document).ready(function(){
         var url = this.href;
 
         // console.log( "curr url: " + url);
-        history.replaceState(null, null, url);
+        // history.replaceState("project", null, url);
 
         $("#tempCSS").attr('href','css/projects.css');
 
         $('#mainContent').remove();
-        $('#contentWrapper').load(url + ' #mainContent').hide().fadeIn('slow');
+        $('#contentWrapper').load(url + ' #mainContent', function() {
+            history.pushState(null, null, url);
+        }).hide().fadeIn('slow');
     });
+
+    // window.onpopstate = function(event) {
+    //     console.log("location: " + document.location );
+    // }
 
     /* Projects */
 
