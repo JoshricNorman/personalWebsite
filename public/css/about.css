@@ -5,7 +5,9 @@
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
     align-content: flex-start;
@@ -48,9 +50,7 @@
         padding: 20px;
         flex-basis: 0;
         flex-grow: 1;
-        /*border-left: 1px solid #200535; */
         box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
-
     }
 
         /*#contactButts {

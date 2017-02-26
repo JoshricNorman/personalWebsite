@@ -26,7 +26,12 @@
 
 
     #projectInfoContainer{
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
         display: flex;
+        -webkit-flex-direction: column;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -67,6 +72,10 @@
         }
 
     #projectModal {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
         display: none;
         position: fixed;
         z-index: 20;
@@ -80,6 +89,7 @@
         background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
         cursor: zoom-out;
 
+        -webkit-flex-direction: column;
         flex-direction: column;
         justify-content: center;
         align-items: center;
