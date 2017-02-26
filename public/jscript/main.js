@@ -98,7 +98,14 @@ $( window ).resize(function(){
         // $('#mainContent').load(url + ' #container').hide().fadeIn('slow');
 
         $('#mainContent').remove();
-        $('#contentWrapper').load(url + ' #mainContent').hide().fadeIn('slow');
+        $('#contentWrapper').load(url + ' #mainContent', function() {
+            if( $("#mainContent").outerHeight() < window.innerHeight ) {
+                $("#footer").css("display", "none");
+            }
+            else {
+                $("#footer").css("display", "block");
+            }
+        }).hide().fadeIn('slow');
 
     });
 
