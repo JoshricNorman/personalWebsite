@@ -107,6 +107,10 @@ html {
         }
 
         #homeNav {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -204,6 +208,10 @@ html {
             }
 
             .previewFlexBox {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
@@ -297,6 +305,7 @@ html {
                         line-height: 0px;
                         padding: 25px 10px;
                         opacity: 0.75;
+                        z-index: 25;
                     }
 
                     #prevSlide {

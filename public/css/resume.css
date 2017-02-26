@@ -7,6 +7,10 @@
 }
 
 #abilitiesFlexBox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -32,6 +36,10 @@
 
 
 #resumeFlexBox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
@@ -57,11 +65,19 @@
         }
 
         .resumeInfoFlexBox {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
             display: flex;
             flex-direction: column;
         }
 
             .resumeBulletPoint {
+                display: -webkit-box;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-around;
@@ -91,6 +107,10 @@
         background-color: #DDC1D7;
         padding: 30px;
         /*margin-right: 15px;*/
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -163,6 +183,10 @@
         }
 
 #resumeContactFlex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     justify-content: center;
     align-items: center;

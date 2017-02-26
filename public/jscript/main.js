@@ -190,6 +190,7 @@ $( window ).resize(function(){
         $('#mainContent').remove();
         $('#contentWrapper').load(url + ' #mainContent', function() {
             history.pushState(null, null, url);
+            $("#footer").css("display", "block");
         }).hide().fadeIn('slow');
     });
 

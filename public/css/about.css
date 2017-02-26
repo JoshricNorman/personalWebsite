@@ -1,5 +1,9 @@
 /*ABOUT*/
 #aboutFlexBox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -80,6 +84,10 @@
         }
 
 #aboutContactFlex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     justify-content: center;
     align-items: center;

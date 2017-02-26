@@ -5,19 +5,23 @@
         font-size: 36px;
         text-decoration: none;
         font-weight: 600;
-        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        /*text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);*/
         margin-top: 10px;
-        color: #2C1414;
-        /*color: white;*/
+        /*color: #2C1414;*/
+        color: white;
         position: fixed;
         float: right;
         right: 10%;
         bottom: 10%;
         z-index: 30;
+        padding: 0 12px;
+        border-radius: 50%;
+        background-color: #E45C44;
     }
 
     #exitProjectInfo:hover {
-        color: #E45C44;
+        /*color: #E45C44;*/
+        opacity: 0.85;
     }
 
 
