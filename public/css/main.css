@@ -534,8 +534,13 @@ html {
 /* SMART PHONES */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
-    .navButtA {
-        font-size: 12px;
+    #mainNav {
+        margin-right: 10%;
+    }
+
+    #mainNav a {
+        padding: 0 10px;
+        font-size: 4.0vw;
     }
 }
 /* end media query*/

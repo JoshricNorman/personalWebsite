@@ -46,12 +46,12 @@
             width: 100%;
             height: auto;
             min-width:  450px;
-
         }
 
         .projectImg {
             cursor: zoom-in;
             max-width: 360px;
+            width: 100%;
             height: auto;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
@@ -123,5 +123,13 @@
             color: white;
             margin: auto;
             text-align: center;
+            padding: 0 15px;
             /*padding: 10px 0;*/
         }
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    #projectHeaderImg {
+        min-width: 320px;
+    }
+}

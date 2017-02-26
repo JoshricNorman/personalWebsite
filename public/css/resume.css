@@ -196,3 +196,12 @@
     width: 50%;
     min-width: 250px;
     }
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    #mainResumeInfo > * {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
