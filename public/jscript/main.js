@@ -2,6 +2,14 @@
 $(document).ready(function(){
 
 
+$( window ).resize(function(){
+    if( $("#mainContent").outerHeight() < window.innerHeight ) {
+        $("#footer").fadeOut();
+    }
+    else {
+        $("#footer").fadeIn();        
+    }
+});
 
 /* NAVIGATION */
 
