@@ -152,13 +152,6 @@ html {
                     display:none;
                 }
 
-                .anchor {
-                    margin: auto;
-                    display: block;
-                    position: relative;
-                    width: 1px;
-                    height: 1px;
-                }
 
         #speechTriangle {
             width: 0;
@@ -371,3 +364,52 @@ html {
                     min-width: 225px;
                     padding: 15px 30px;
                 }
+
+
+/*MEDIA QUERIES*/
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    /** { border: solid red 1px;}*/
+
+    header {
+        padding-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    header h3 {
+        font-size: 6.0vw;
+    }
+
+    #homeNav {
+        padding: 0;
+        /*width: 300px;*/
+        min-width: 300px;
+        max-width: 480px;
+        flex-wrap: nowrap;
+    }
+
+        .navButt {
+            padding: 2% 0 25px 0;
+            width: 25%;
+            min-width: 100px;
+        }
+
+        .navButt a img {
+            width: 75%;
+            height: auto;
+        }
+
+        .navButt h3 {
+            font-size: 5.0vw;
+            /*display: block;*/
+        }
+
+    .contentFlexBox {
+        padding: 2px;
+    }
+
+    #prevSlide, #nextSlide {
+        display: none;
+    }
+}

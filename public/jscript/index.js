@@ -46,10 +46,7 @@ $(document).ready(function(){
         $(this).siblings("#navButtActive").removeAttr("id"); //set other active nav buttons as inactive
         if( $(this).attr("id") != "navButtActive" ) {
             $(this).attr("id", "navButtActive"); //set curr nav butt as active
-            // currAnchor = $(this).find(".anchor");
-            // var currAnchorPos = currAnchor.position();
-            // var moveLeft = currAnchorPos.left
-
+    
             currAnchor = $(this);
             currAnchorPos = currAnchor.position();
             var moveLeft = currAnchorPos.left + ( $(this).outerWidth() /2);
