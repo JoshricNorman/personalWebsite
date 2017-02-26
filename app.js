@@ -32,6 +32,10 @@ app.get('/portfolio', function( req, res) {
         res.sendFile(path.join(__dirname + '/eja.html'));
     });
 
+    app.get('/photoStudiesOne', function( req, res) {
+        res.sendFile(path.join(__dirname + '/photostudiesi.html'));
+    });
+
     app.get('/bearGarden1315', function( req, res) {
         res.sendFile(path.join(__dirname + '/beargarden1315.html'));
     });
