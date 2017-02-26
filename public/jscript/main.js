@@ -2,12 +2,19 @@
 $(document).ready(function(){
 
 
+if( $("#mainContent").outerHeight() < window.innerHeight ) {
+    $("#footer").css("display", "none");
+}
+else {
+    $("#footer").css("display", "block");
+}
+
 $( window ).resize(function(){
     if( $("#mainContent").outerHeight() < window.innerHeight ) {
         $("#footer").fadeOut();
     }
     else {
-        $("#footer").fadeIn();        
+        $("#footer").fadeIn();
     }
 });
 
