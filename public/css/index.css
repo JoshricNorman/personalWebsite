@@ -368,6 +368,20 @@ html {
 
 /*MEDIA QUERIES*/
 
+
+/*@media only screen and (min-width : 321px) {
+
+    header {
+        padding: 5px;
+    }
+    #homeNav {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}*/
+/* end media query*/
+
+/*SMART PHONES*/
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
     /** { border: solid red 1px;}*/
@@ -390,8 +404,10 @@ html {
     }
 
         .navButt {
-            padding: 2% 0 25px 0;
+            padding: 35px 0 25px 0;
+            margin-bottom: 25px;
             width: 25%;
+            height: auto;
             min-width: 100px;
         }
 
@@ -412,4 +428,13 @@ html {
     #prevSlide, #nextSlide {
         display: none;
     }
+
+
 }
+/* end media query*/
+
+/* IPADS */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+}
+/* end media query*/
