@@ -20,6 +20,14 @@ app.get('/portfolio', function( req, res) {
 });
 
  // PORTFOLIO PROJECTS
+     app.get('/redcross', function( req, res) {
+         res.sendFile(path.join(__dirname + '/redcross.html'));
+     });
+
+     app.get('/lucerne', function( req, res) {
+         res.sendFile(path.join(__dirname + '/lucerne.html'));
+     });
+
     app.get('/bearGarden1516', function( req, res) {
         res.sendFile(path.join(__dirname + '/bearGarden1516.html'));
     });
